@@ -1,0 +1,3261 @@
+[
+    {
+        "id": "9fbb1fd12a16d1fc",
+        "type": "tab",
+        "label": "Poluição do ar",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "458810314d872589",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dc551fcda8623cc8",
+        "type": "tab",
+        "label": "Automação Residencial com Controle por Voz",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2ba8bb5e7935c93b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "ec2kessiner.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3c1b09fa4c168fdf",
+        "type": "ui_group",
+        "name": "Enxofre",
+        "tab": "3046f6ea24ac700b",
+        "order": 4,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": "[   {     \"id\": \"c04f5eeb.4e94d8\",     \"type\": \"function\",     \"z\": \"eae6a078.e5c798\",     \"name\": \"Poluição do Ar\",     \"func\": \"return msg;\",     \"outputs\": 1,     \"noerr\": 0,     \"x\": 390,     \"y\": 180,     \"wires\": [[\"8a54d717.94bde\"]]   } ]"
+    },
+    {
+        "id": "3046f6ea24ac700b",
+        "type": "ui_tab",
+        "name": "Niveis de poluição",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "49e8b92c2ca502d7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#a91e56",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#6f154a",
+                "baseFont": "Impact,Impact,Charcoal,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#6f154a",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#6f154a",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#af2175",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#6f154a",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Impact,Impact,Charcoal,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "red",
+                "warn": "grey",
+                "background": "grey",
+                "palette": "dark"
+            }
+        },
+        "site": {
+            "name": " Detecção da Poluição do Ar",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "none",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b007859f7b041949",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a284fdaa38c18f81",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "641235355f36f5d7",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "93fae4f98fb26898",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dd885df6ad54c298",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false
+    },
+    {
+        "id": "c99b4d50d24216dc",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d28ce36e84a59828",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e169516c809e1bb3",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d725af890aebfeb2",
+        "type": "ui_group",
+        "name": "Function",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1f4289d49a7e111e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "embarcadosifsp.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7cdcce9548783569",
+        "type": "ui_group",
+        "name": "Gráfico",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5103c078a6235cd1",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ea3aa6b359249740",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.31.82.140",
+        "port": "3306",
+        "db": "leituras_potenciometros",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d96e3e5ad8781f01",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "poluicao_do_ar",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "52e566a8e8a7d7f5",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.31.82.140",
+        "port": "3306",
+        "db": "leituras_potenciometros",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d504c800a5d6cf3a",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.31.82.140",
+        "port": "3306",
+        "db": "leituras_potenciometros",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "90e7d61d7c5fb981",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "poluicao_do_ar",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d5ecfd40c4e3f384",
+        "type": "ui_group",
+        "name": "Ozonio",
+        "tab": "3046f6ea24ac700b",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": "[   {     \"id\": \"c04f5eeb.4e94d8\",     \"type\": \"function\",     \"z\": \"eae6a078.e5c798\",     \"name\": \"Poluição do Ar\",     \"func\": \"return msg;\",     \"outputs\": 1,     \"noerr\": 0,     \"x\": 390,     \"y\": 180,     \"wires\": [[\"8a54d717.94bde\"]]   } ]"
+    },
+    {
+        "id": "cd76db0c43b7b365",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "poluicao_do_ar",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "cd9cdc3546168975",
+        "type": "ui_tab",
+        "name": "Gráfico de risco",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "539d1acf377a8847",
+        "type": "ui_group",
+        "name": "Banco de dados",
+        "tab": "cd9cdc3546168975",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5fc1ca8d7f966b6e",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.31.82.140",
+        "port": "3306",
+        "db": "leituras_potenciometros",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "351e16d558943935",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.31.82.140",
+        "port": "3306",
+        "db": "leituras_potenciometros",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "f217da72ddb1de46",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "wilianjr.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a1530e7a4f198358",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "nomedobanco",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "5076a74eddd229ed",
+        "type": "ui_group",
+        "name": "Cozinha",
+        "tab": "3046f6ea24ac700b",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f3b948d7fd19498f",
+        "type": "ui_group",
+        "name": "Sala",
+        "tab": "3046f6ea24ac700b",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ffda428c54db671",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#0c3e41",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "tema 1",
+                "default": "#4B7930",
+                "baseColor": "#ffffff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#ff0000",
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#004594",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#1c242c",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#004594",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#1f5bc1",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#19232d",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#337e9e",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#17202a",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "red",
+                "accents": "red",
+                "warn": "red",
+                "background": "pink",
+                "palette": "dark"
+            }
+        },
+        "site": {
+            "name": "Automação Residencial com Controle por Voz",
+            "hideToolbar": "false",
+            "allowSwipe": "menu",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 60,
+                "sy": 60,
+                "gx": 8,
+                "gy": 8,
+                "cx": 8,
+                "cy": 8,
+                "px": 8,
+                "py": 8
+            }
+        }
+    },
+    {
+        "id": "2f777fe7250a9685",
+        "type": "ui_tab",
+        "name": "Sala",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b003be80ec158954",
+        "type": "ui_tab",
+        "name": "Cozinha",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "57c528b8b6b70582",
+        "type": "ui_tab",
+        "name": "Quarto",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6b99eaa90d22ac5a",
+        "type": "ui_tab",
+        "name": "Monitoramento",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1e3b948f37f0908b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "embarcadosifsp.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "25d844dca9b3102a",
+        "type": "ui_spacer",
+        "z": "dc551fcda8623cc8",
+        "name": "spacer",
+        "group": "",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d8b376d6d0f31179",
+        "type": "ui_spacer",
+        "z": "dc551fcda8623cc8",
+        "name": "spacer",
+        "group": "",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "22fa2be8296754f0",
+        "type": "ui_spacer",
+        "z": "dc551fcda8623cc8",
+        "name": "spacer",
+        "group": "",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3cd26f25b6bda9f7",
+        "type": "ui_spacer",
+        "z": "dc551fcda8623cc8",
+        "name": "spacer",
+        "group": "",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "10589dde4c04aa46",
+        "type": "ui_spacer",
+        "z": "dc551fcda8623cc8",
+        "name": "spacer",
+        "group": "",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cf6d2d2efc50619d",
+        "type": "ui_spacer",
+        "z": "dc551fcda8623cc8",
+        "name": "spacer",
+        "group": "",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "56aea7be508ed4fb",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.31.82.140",
+        "port": "3306",
+        "db": "leituras_potenciometros",
+        "tz": "hh:mm",
+        "charset": "UTF8"
+    },
+    {
+        "id": "60aa7bcd73f6b93e",
+        "type": "ui_group",
+        "name": "Sala",
+        "tab": "2f777fe7250a9685",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "92f27c1950f3dafb",
+        "type": "ui_group",
+        "name": "Cozinha",
+        "tab": "b003be80ec158954",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "af282ab6a442f819",
+        "type": "ui_group",
+        "name": "Quarto",
+        "tab": "57c528b8b6b70582",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d9d8e2bbad7846be",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "http://ec2mvr.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8e728d65d4d9d7e5",
+        "type": "ui_gauge",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Medidor ozonio",
+        "group": "d5ecfd40c4e3f384",
+        "order": 3,
+        "width": 10,
+        "height": 5,
+        "gtype": "gage",
+        "title": "ozonio",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#d40808",
+            "#e6e600",
+            "#06a210"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7eb87b6652ed9141",
+        "type": "ui_chart",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Gráfico ozonio",
+        "group": "d5ecfd40c4e3f384",
+        "order": 2,
+        "width": 10,
+        "height": 6,
+        "label": "ozonio",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1e28b3",
+            "#aec7e8",
+            "#f58019",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 420,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20ab2f36551ca539",
+        "type": "ui_led",
+        "z": "9fbb1fd12a16d1fc",
+        "order": 1,
+        "group": "d5ecfd40c4e3f384",
+        "width": 10,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#ff0505",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED-Umid",
+        "x": 610,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2a7d786db3bb10e7",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Turn On LED",
+        "func": "if (msg.payload >80) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "20ab2f36551ca539"
+            ]
+        ]
+    },
+    {
+        "id": "93310767807ddf5e",
+        "type": "mqtt in",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "topic": "esp32/ozonio",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "2a7d786db3bb10e7",
+                "7eb87b6652ed9141",
+                "8e728d65d4d9d7e5"
+            ]
+        ]
+    },
+    {
+        "id": "047840614941541a",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "dioxido_de_enxofre",
+        "func": "var dioxido_de_enxofre = msg.payload;\n\nmsg.dioxido_de_enxofre = dioxido_de_enxofre;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "12373119e50cc9f8"
+            ]
+        ]
+    },
+    {
+        "id": "752e675f5d8a5be2",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "ozonio",
+        "func": "var ozonio = msg.payload;\n\nmsg.ozonio = ozonio;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "12373119e50cc9f8"
+            ]
+        ]
+    },
+    {
+        "id": "12373119e50cc9f8",
+        "type": "join",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "9c91d1b6c3a21d91"
+            ]
+        ]
+    },
+    {
+        "id": "9c91d1b6c3a21d91",
+        "type": "delay",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "a73de6acb1085094"
+            ]
+        ]
+    },
+    {
+        "id": "a73de6acb1085094",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "INSERT",
+        "func": "var dioxido_de_enxofre = msg.payload['esp32/dioxido_de_enxofre'] || 0;\nvar ozonio = msg.payload['esp32/ozonio'] || 0;\n\nmsg.topic = \"INSERT INTO poluicao_do_ar (dioxido_de_enxofre, ozonio, timestamp) VALUES (\" + dioxido_de_enxofre + \", \" + ozonio + \", CURRENT_TIMESTAMP);\"\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 440,
+        "wires": [
+            [
+                "b68bf5cd4f3e0675"
+            ]
+        ]
+    },
+    {
+        "id": "98ddbd4bf9caa196",
+        "type": "mqtt in",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "topic": "esp32/dioxido_de_enxofre",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "047840614941541a"
+            ]
+        ]
+    },
+    {
+        "id": "1315438eb79c0619",
+        "type": "mqtt in",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "topic": "esp32/ozonio",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "752e675f5d8a5be2"
+            ]
+        ]
+    },
+    {
+        "id": "b68bf5cd4f3e0675",
+        "type": "mysql",
+        "z": "9fbb1fd12a16d1fc",
+        "mydb": "d96e3e5ad8781f01",
+        "name": "conexao_mysql",
+        "x": 980,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d1aba10cb363f57",
+        "type": "mysql",
+        "z": "9fbb1fd12a16d1fc",
+        "mydb": "d96e3e5ad8781f01",
+        "name": "conexao_mysql",
+        "x": 440,
+        "y": 660,
+        "wires": [
+            [
+                "5893cc8359a0dd12"
+            ]
+        ]
+    },
+    {
+        "id": "05d6b8f607fe927a",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "DELET",
+        "func": "\nmsg.topic = \"Delete  FROM poluicao_do_ar ;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 660,
+        "wires": [
+            [
+                "4d1aba10cb363f57"
+            ]
+        ]
+    },
+    {
+        "id": "5893cc8359a0dd12",
+        "type": "debug",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "dados mysql",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "5db93ebc7e0cab7a",
+        "type": "inject",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "05d6b8f607fe927a"
+            ]
+        ]
+    },
+    {
+        "id": "08bffa7c2e8c8897",
+        "type": "inject",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "d62c2704f8f0b2b5"
+            ]
+        ]
+    },
+    {
+        "id": "d62c2704f8f0b2b5",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "SELECT",
+        "func": "msg.topic = \"SELECT dioxido_de_enxofre as dioxido_de_enxofre, ozonio as ozonio, timeStamp as timeStamp FROM poluicao_do_ar where timeStamp >= now() - 84600;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 540,
+        "wires": [
+            [
+                "7817a7046aa54e6b"
+            ]
+        ]
+    },
+    {
+        "id": "7817a7046aa54e6b",
+        "type": "mysql",
+        "z": "9fbb1fd12a16d1fc",
+        "mydb": "d96e3e5ad8781f01",
+        "name": "conexao_mysql",
+        "x": 440,
+        "y": 540,
+        "wires": [
+            [
+                "d63883b77939d2c5"
+            ]
+        ]
+    },
+    {
+        "id": "d63883b77939d2c5",
+        "type": "change",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Format data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "(\t  $series := [\t    { \"label\": \"dioxido_de_enxofre (µg/m³)\", \"field\": \"dioxido_de_enxofre\" },\t    { \"label\": \"ozonio (µg/m³)\", \"field\": \"ozonio\" }\t  ];\t  $xaxis := \"timeStamp\";\t  [\t    {\t      \"series\": $series.label,\t      \"data\": $series.[\t        (\t          $yaxis := $.field;\t          $$.payload.{\t            \"x\": $lookup($, $xaxis),\t            \"y\": $lookup($, $yaxis)\t          }\t        )\t      ]\t    }\t  ]\t)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 540,
+        "wires": [
+            [
+                "3c0ad3ec879076cd"
+            ]
+        ]
+    },
+    {
+        "id": "3c0ad3ec879076cd",
+        "type": "ui_chart",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "24 hours data",
+        "group": "539d1acf377a8847",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "dioxido_de_enxofre e ozonio",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#078f05",
+            "#2d2da8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 820,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c264dd6dcee0378",
+        "type": "inject",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "d9cc8e5f665398a3"
+            ]
+        ]
+    },
+    {
+        "id": "d9cc8e5f665398a3",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "SELECT",
+        "func": "\nmsg.topic = \"SELECT * FROM poluicao_do_ar ORDER BY timestamp DESC LIMIT 10;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 600,
+        "wires": [
+            [
+                "45cc18ef8e6798ea"
+            ]
+        ]
+    },
+    {
+        "id": "45cc18ef8e6798ea",
+        "type": "mysql",
+        "z": "9fbb1fd12a16d1fc",
+        "mydb": "d96e3e5ad8781f01",
+        "name": "conexao_mysql",
+        "x": 440,
+        "y": 600,
+        "wires": [
+            [
+                "ec8ca747251427eb"
+            ]
+        ]
+    },
+    {
+        "id": "ec8ca747251427eb",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Formatar Dados",
+        "func": "const formattedData = [];\n\nmsg.payload.forEach((row) => {\n    const formattedRow = {\n        hora: row.timeStamp,\n        dioxido_de_enxofre: row.dioxido_de_enxofre,\n        ozonio: row.ozonio\n    };\n    formattedData.push(formattedRow);\n});\n\nmsg.payload = formattedData;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 600,
+        "wires": [
+            [
+                "866e7d10ddb1b327"
+            ]
+        ]
+    },
+    {
+        "id": "866e7d10ddb1b327",
+        "type": "ui_template",
+        "z": "9fbb1fd12a16d1fc",
+        "group": "539d1acf377a8847",
+        "name": "Tabela com style",
+        "order": 2,
+        "width": 12,
+        "height": 7,
+        "format": "<div layout=\"row\" layout-align=\"start center\">\n  <span flex>Hora</span>\n  <span flex>dioxido_de_enxofre</span>\n  <span flex>ozonio</span>\n  \n</div>\n<div layout=\"row\" layout-align=\"start center\" ng-repeat=\"row in msg.payload\">\n  <span flex style=\"color: yellow\">{{row.hora}}</span>\n  <span flex style=\"color: green\">{{row.dioxido_de_enxofre}} µg/m³</span>\n  <span flex style=\"color: blue\">{{row.ozonio}} µg/m³</span>\n  \n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c33ce97acf58ccf7",
+        "type": "inject",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 710,
+        "y": 380,
+        "wires": [
+            [
+                "a73de6acb1085094"
+            ]
+        ]
+    },
+    {
+        "id": "090c11eef8dc644e",
+        "type": "mqtt in",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "",
+        "topic": "esp32/dioxido_de_enxofre",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "d6b071780f466b53",
+                "f4572f21e01f8743",
+                "c38d32c10c24decf"
+            ]
+        ]
+    },
+    {
+        "id": "c38d32c10c24decf",
+        "type": "ui_gauge",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Medidor enxofre",
+        "group": "3c1b09fa4c168fdf",
+        "order": 3,
+        "width": 10,
+        "height": 5,
+        "gtype": "gage",
+        "title": "enxofre",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 440,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f4572f21e01f8743",
+        "type": "ui_chart",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Gráfico enxofre",
+        "group": "3c1b09fa4c168fdf",
+        "order": 2,
+        "width": 10,
+        "height": 6,
+        "label": "Enxofre",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1e37b3",
+            "#aec7e8",
+            "#e47311",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 440,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08f0506637062bf3",
+        "type": "ui_led",
+        "z": "9fbb1fd12a16d1fc",
+        "order": 1,
+        "group": "3c1b09fa4c168fdf",
+        "width": 10,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#ff0505",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": true,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED-Temp",
+        "x": 610,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d6b071780f466b53",
+        "type": "function",
+        "z": "9fbb1fd12a16d1fc",
+        "name": "Turn On LED",
+        "func": "if (msg.payload >20) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 40,
+        "wires": [
+            [
+                "08f0506637062bf3"
+            ]
+        ]
+    },
+    {
+        "id": "33c815c8c8632d56",
+        "type": "mqtt in",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "esp32/sala",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "110fad644f7b8aa3",
+                "77ca800f89062dea",
+                "f420ba924cd69944",
+                "e6602fe791717d17",
+                "8f025c0f2f7fdbd3",
+                "1dec13217d4894be",
+                "67905bd8c0c0cc54",
+                "8483a9b949137b27"
+            ]
+        ]
+    },
+    {
+        "id": "27e401f2a0da77b8",
+        "type": "mqtt in",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "esp32/quarto",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 920,
+        "wires": [
+            [
+                "b1adfcabffc12154",
+                "fa66b5ac4a4e2502",
+                "bd6e91e891c8f733",
+                "96ac7c2d7711b45c",
+                "a8333456125bccf1",
+                "d272c712bbabdd20",
+                "6e9247bf83f60253",
+                "a452637976b9d330"
+            ]
+        ]
+    },
+    {
+        "id": "fa66b5ac4a4e2502",
+        "type": "ui_gauge",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "group": "3c1b09fa4c168fdf",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "gtype": "gage",
+        "title": "QUARTO",
+        "label": "decibéis",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#d3d3d3",
+            "#ffff00",
+            "#800080"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 340,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b1adfcabffc12154",
+        "type": "ui_chart",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "group": "3c1b09fa4c168fdf",
+        "order": 3,
+        "width": 8,
+        "height": 6,
+        "label": "Quarto",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 330,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5224f2af861f0868",
+        "type": "mqtt in",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "esp32/cozinha",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "a6c77f3d3a1e4d74",
+                "e251f22828b79be8",
+                "64f02318cd1ce415",
+                "e74364897145d7d0",
+                "876c98fb495260db",
+                "c760a89e75a5e4b8",
+                "7ec3a8619ac76d2d",
+                "26aa791b2e346b83"
+            ]
+        ]
+    },
+    {
+        "id": "110fad644f7b8aa3",
+        "type": "ui_gauge",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "group": "f3b948d7fd19498f",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "gtype": "gage",
+        "title": "SALA",
+        "label": "decibéis",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#add8e6",
+            "#ffa500",
+            "#8b0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "77ca800f89062dea",
+        "type": "debug",
+        "z": "dc551fcda8623cc8",
+        "name": "SALA",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f420ba924cd69944",
+        "type": "ui_chart",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "group": "f3b948d7fd19498f",
+        "order": 3,
+        "width": 8,
+        "height": 6,
+        "label": "Sala",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 350,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e251f22828b79be8",
+        "type": "ui_gauge",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "group": "5076a74eddd229ed",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "gtype": "gage",
+        "title": "COZINHA",
+        "label": "decibéis",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a6c77f3d3a1e4d74",
+        "type": "ui_chart",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "group": "5076a74eddd229ed",
+        "order": 3,
+        "width": 8,
+        "height": 6,
+        "label": "Cozinha",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 360,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64f02318cd1ce415",
+        "type": "debug",
+        "z": "dc551fcda8623cc8",
+        "name": "COZINHA",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "bd6e91e891c8f733",
+        "type": "debug",
+        "z": "dc551fcda8623cc8",
+        "name": "QUARTO",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "8c33f07ab19ca783",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 2,
+        "group": "f3b948d7fd19498f",
+        "width": 8,
+        "height": 5,
+        "label": "SALA ",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#dbdb1a",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e6602fe791717d17",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 50) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "8c33f07ab19ca783",
+                "22b379384c89f126",
+                "71e3923bbf3f5d34"
+            ]
+        ]
+    },
+    {
+        "id": "0c728b5e25188887",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 2,
+        "group": "5076a74eddd229ed",
+        "width": 8,
+        "height": 5,
+        "label": "Cozinha",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#dbdb1a",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e74364897145d7d0",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 100) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "0c728b5e25188887",
+                "db12294c740ec2c3",
+                "6aefa99d066d4d8c"
+            ]
+        ]
+    },
+    {
+        "id": "b312818d29970dca",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 2,
+        "group": "3c1b09fa4c168fdf",
+        "width": 8,
+        "height": 5,
+        "label": "Quarto",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#dbdb1a",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 510,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "96ac7c2d7711b45c",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 50) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 900,
+        "wires": [
+            [
+                "b312818d29970dca",
+                "39445b0f022ece85",
+                "5fa4d5604bed94db"
+            ]
+        ]
+    },
+    {
+        "id": "142aaa034afd4268",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 3,
+        "group": "60aa7bcd73f6b93e",
+        "width": 10,
+        "height": 3,
+        "label": "TV",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#050000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#21e907",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "8f025c0f2f7fdbd3",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On TV",
+        "func": "if (msg.payload > 75) {\n    // Ligar a TV\n    msg.payload = true;\n} else if (msg.payload <= 25) {\n    // Desligar a TV\n    msg.payload = false;\n} else {\n    // Manter a TV desligada\n    msg.payload = context.get('tvStatus') || false;\n}\n\ncontext.set('tvStatus', msg.payload); // Armazena o estado atual da TV\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "142aaa034afd4268"
+            ]
+        ]
+    },
+    {
+        "id": "e860eacaabd67dcb",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 2,
+        "group": "60aa7bcd73f6b93e",
+        "width": 10,
+        "height": 4,
+        "label": "SALA ",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#dbdb1a",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1dec13217d4894be",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 50) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "e860eacaabd67dcb"
+            ]
+        ]
+    },
+    {
+        "id": "67905bd8c0c0cc54",
+        "type": "ui_text",
+        "z": "dc551fcda8623cc8",
+        "group": "60aa7bcd73f6b93e",
+        "order": 1,
+        "width": 10,
+        "height": 3,
+        "name": "",
+        "label": "Nivel de som ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 370,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7417ddd1ec84fd3f",
+        "type": "comment",
+        "z": "dc551fcda8623cc8",
+        "name": "Principal",
+        "info": "",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d76f4d76b529add2",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 4,
+        "group": "60aa7bcd73f6b93e",
+        "width": 10,
+        "height": 3,
+        "label": "Ar Condicionado ",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#050000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#1aa7ff",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8483a9b949137b27",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On Ar",
+        "func": "if (msg.payload > 85) {\n    // Ligar a AR\n    msg.payload = true;\n} else if (msg.payload <= 15) {\n    // Desligar o AR\n    msg.payload = false;\n} else {\n    // Manter o AR desligado\n    msg.payload = context.get('arStatus') || false;\n}\n\ncontext.set('arStatus', msg.payload); // Armazena o estado atual do Ar\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "d76f4d76b529add2"
+            ]
+        ]
+    },
+    {
+        "id": "26189f0333dcefa4",
+        "type": "comment",
+        "z": "dc551fcda8623cc8",
+        "name": "Principal",
+        "info": "",
+        "x": 360,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9ea182a343809420",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 2,
+        "group": "92f27c1950f3dafb",
+        "width": 6,
+        "height": 4,
+        "label": "Cozinha",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#dbdb1a",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "876c98fb495260db",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 50) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "9ea182a343809420"
+            ]
+        ]
+    },
+    {
+        "id": "c760a89e75a5e4b8",
+        "type": "ui_text",
+        "z": "dc551fcda8623cc8",
+        "group": "92f27c1950f3dafb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nivel de som ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 370,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "88352f51463532f4",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 3,
+        "group": "92f27c1950f3dafb",
+        "width": 6,
+        "height": 4,
+        "label": "Cafeteira",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#e72113",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7ec3a8619ac76d2d",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On Cafeteira",
+        "func": "var cafeStatus = context.get('cafeStatus') || false;\nvar cafeLigado = context.get('cafeLigado') || false;\nvar timestamp = context.get('timestamp') || 0;\n\nvar tempoAtual = Date.now();\nvar tempoPassado = tempoAtual - timestamp;\n\nif (!cafeLigado && msg.payload >= 65 && msg.payload <= 70) {\n    // Ligar a cafeteira\n    cafeStatus = true;\n    cafeLigado = true;\n    context.set('cafeStatus', cafeStatus);\n    context.set('cafeLigado', cafeLigado);\n    context.set('timestamp', tempoAtual);\n} else if (cafeLigado && tempoPassado >= 10000) {\n    // Desligar a cafeteira após 10 segundos\n    cafeStatus = false;\n    context.set('cafeStatus', cafeStatus);\n    context.set('timestamp', tempoAtual);\n    setTimeout(function () {\n        // Permitir nova ligação da cafeteira após 15 segundos\n        cafeLigado = false;\n        context.set('cafeLigado', cafeLigado);\n    }, 15000);\n}\n\nmsg.payload = cafeStatus;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "88352f51463532f4"
+            ]
+        ]
+    },
+    {
+        "id": "ca33d4ec176d5914",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 4,
+        "group": "92f27c1950f3dafb",
+        "width": 6,
+        "height": 4,
+        "label": "Exaustor",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#83b7d8",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 550,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "26aa791b2e346b83",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On Exaustor",
+        "func": "if (msg.payload > 150) {\n    // Ligar a exaustor\n    msg.payload = true;\n} else if (msg.payload <= 100) {\n    // Desligar o exaustor\n    msg.payload = false;\n} else {\n    // Manter o exaustor desligado\n    msg.payload = context.get('exaustorStatus') || false;\n}\n\ncontext.set('exaustorStatus', msg.payload); // Armazena o estado atual do Ar\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "ca33d4ec176d5914"
+            ]
+        ]
+    },
+    {
+        "id": "9c0d344ad8b40070",
+        "type": "comment",
+        "z": "dc551fcda8623cc8",
+        "name": "Principal",
+        "info": "",
+        "x": 360,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "3d812a265651722e",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 2,
+        "group": "af282ab6a442f819",
+        "width": 6,
+        "height": 4,
+        "label": "Quarto",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#000000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#dbdb1a",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 490,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a8333456125bccf1",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 50) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1020,
+        "wires": [
+            [
+                "3d812a265651722e"
+            ]
+        ]
+    },
+    {
+        "id": "d272c712bbabdd20",
+        "type": "ui_text",
+        "z": "dc551fcda8623cc8",
+        "group": "af282ab6a442f819",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nivel de som ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 350,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "6d605b7fa4004664",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 3,
+        "group": "af282ab6a442f819",
+        "width": 6,
+        "height": 4,
+        "label": "TV",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#050000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#1fb731",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 490,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6e9247bf83f60253",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On TV",
+        "func": "if (msg.payload > 75) {\n    // Ligar a TV\n    msg.payload = true;\n} else if (msg.payload <= 25) {\n    // Desligar a TV\n    msg.payload = false;\n} else {\n    // Manter a TV desligada\n    msg.payload = context.get('tvStatus') || false;\n}\n\ncontext.set('tvStatus', msg.payload); // Armazena o estado atual da TV\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1060,
+        "wires": [
+            [
+                "6d605b7fa4004664"
+            ]
+        ]
+    },
+    {
+        "id": "da9ff23d62bb56be",
+        "type": "ui_led",
+        "z": "dc551fcda8623cc8",
+        "order": 4,
+        "group": "af282ab6a442f819",
+        "width": 6,
+        "height": 4,
+        "label": "Ar Condicionado ",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#050000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#1aa7ff",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 490,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "a452637976b9d330",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Turn On Ar",
+        "func": "if (msg.payload > 85) {\n    // Ligar a AR\n    msg.payload = true;\n} else if (msg.payload <= 15) {\n    // Desligar o AR\n    msg.payload = false;\n} else {\n    // Manter o AR desligado\n    msg.payload = context.get('arStatus') || false;\n}\n\ncontext.set('arStatus', msg.payload); // Armazena o estado atual do Ar\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1100,
+        "wires": [
+            [
+                "da9ff23d62bb56be"
+            ]
+        ]
+    },
+    {
+        "id": "80da1e7f9fe15c8a",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Sala",
+        "func": "var sala = msg.payload;\n\nmsg.sala = sala;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 40,
+        "wires": [
+            [
+                "fc2a591181cd672a"
+            ]
+        ]
+    },
+    {
+        "id": "86f079b30a11cb51",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Cozinha",
+        "func": "var cozinha = msg.payload;\n\nmsg.cozinha = cozinha;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 100,
+        "wires": [
+            [
+                "fc2a591181cd672a"
+            ]
+        ]
+    },
+    {
+        "id": "9c719c66f0a59455",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Quarto",
+        "func": "var quarto = msg.payload;\n\nmsg.quarto = quarto;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 160,
+        "wires": [
+            [
+                "fc2a591181cd672a"
+            ]
+        ]
+    },
+    {
+        "id": "fc2a591181cd672a",
+        "type": "join",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1470,
+        "y": 100,
+        "wires": [
+            [
+                "6125d55f0c076a41"
+            ]
+        ]
+    },
+    {
+        "id": "6125d55f0c076a41",
+        "type": "delay",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1630,
+        "y": 100,
+        "wires": [
+            [
+                "c08875e563e51532"
+            ]
+        ]
+    },
+    {
+        "id": "c08875e563e51532",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "INSERT",
+        "func": "var sala = msg.payload['esp32/sala'] || 0;\nvar cozinha = msg.payload['esp32/cozinha'] || 0;\nvar quarto = msg.payload['esp32/quarto'] || 0;\n\nmsg.topic = \"INSERT INTO tempLog (sala, cozinha, quarto, timeStamp) VALUES (\" + sala + \", \" + cozinha + \", \" + quarto + \",  CURRENT_TIMESTAMP );\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1810,
+        "y": 100,
+        "wires": [
+            [
+                "4b37468b51852d40"
+            ]
+        ]
+    },
+    {
+        "id": "fef249d6083339f7",
+        "type": "mqtt in",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "esp32/sala",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 1100,
+        "y": 40,
+        "wires": [
+            [
+                "80da1e7f9fe15c8a"
+            ]
+        ]
+    },
+    {
+        "id": "ea3bf0497ecd18bf",
+        "type": "mqtt in",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "esp32/quarto",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 1110,
+        "y": 160,
+        "wires": [
+            [
+                "9c719c66f0a59455"
+            ]
+        ]
+    },
+    {
+        "id": "f49be455836f3fd7",
+        "type": "mqtt in",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "esp32/cozinha",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "2ba8bb5e7935c93b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 1110,
+        "y": 100,
+        "wires": [
+            [
+                "86f079b30a11cb51"
+            ]
+        ]
+    },
+    {
+        "id": "4b37468b51852d40",
+        "type": "mysql",
+        "z": "dc551fcda8623cc8",
+        "mydb": "56aea7be508ed4fb",
+        "name": "conexao_mysql",
+        "x": 2000,
+        "y": 100,
+        "wires": [
+            [
+                "0f221a552024b49e"
+            ]
+        ]
+    },
+    {
+        "id": "0f221a552024b49e",
+        "type": "debug",
+        "z": "dc551fcda8623cc8",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2160,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "104719ce8c296660",
+        "type": "mysql",
+        "z": "dc551fcda8623cc8",
+        "mydb": "56aea7be508ed4fb",
+        "name": "conexao_mysql",
+        "x": 1460,
+        "y": 380,
+        "wires": [
+            [
+                "e187f0138d1f6bf4"
+            ]
+        ]
+    },
+    {
+        "id": "504d8148be92f51f",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "DELET",
+        "func": "\nmsg.topic = \"Delete  FROM tempLog ;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 380,
+        "wires": [
+            [
+                "104719ce8c296660"
+            ]
+        ]
+    },
+    {
+        "id": "e187f0138d1f6bf4",
+        "type": "debug",
+        "z": "dc551fcda8623cc8",
+        "name": "dados mysql",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1650,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "de14e363434445bc",
+        "type": "inject",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1120,
+        "y": 380,
+        "wires": [
+            [
+                "504d8148be92f51f"
+            ]
+        ]
+    },
+    {
+        "id": "376fa2a6149325a6",
+        "type": "comment",
+        "z": "dc551fcda8623cc8",
+        "name": "Mysql: Select últimos 10 dados para grafico e tabela",
+        "info": "",
+        "x": 1230,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fbaf840d4bb4b80d",
+        "type": "inject",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1130,
+        "y": 240,
+        "wires": [
+            [
+                "fabea80ea6e41867"
+            ]
+        ]
+    },
+    {
+        "id": "fabea80ea6e41867",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "SELECT",
+        "func": "msg.topic = \"SELECT sala as sala, cozinha as cozinha, quarto as quarto, timeStamp as timeStamp FROM tempLog where timeStamp >= now() - 84600;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 240,
+        "wires": [
+            [
+                "91456a9d8d9ed6ba"
+            ]
+        ]
+    },
+    {
+        "id": "91456a9d8d9ed6ba",
+        "type": "mysql",
+        "z": "dc551fcda8623cc8",
+        "mydb": "56aea7be508ed4fb",
+        "name": "conexao_mysql",
+        "x": 1480,
+        "y": 240,
+        "wires": [
+            [
+                "1b712fb136dadc39"
+            ]
+        ]
+    },
+    {
+        "id": "1b712fb136dadc39",
+        "type": "change",
+        "z": "dc551fcda8623cc8",
+        "name": "Format data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "(\t  $series := [\t    { \"label\": \"sala\", \"field\": \"sala\" },\t    { \"label\": \"cozinha\", \"field\": \"cozinha\" },\t    { \"label\": \"quarto\", \"field\": \"quarto\" }\t  ];\t  $xaxis := \"timeStamp\";\t  [\t    {\t      \"series\": $series.label,\t      \"data\": $series.[\t        (\t          $yaxis := $.field;\t          $$.payload.{\t            \"x\": $lookup($, $xaxis),\t            \"y\": $lookup($, $yaxis)\t          }\t        )\t      ]\t    }\t  ]\t)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1670,
+        "y": 240,
+        "wires": [
+            [
+                "4a6a3b828ba670a4"
+            ]
+        ]
+    },
+    {
+        "id": "4a6a3b828ba670a4",
+        "type": "ui_chart",
+        "z": "dc551fcda8623cc8",
+        "name": "24 hours data",
+        "group": "dd885df6ad54c298",
+        "order": 1,
+        "width": 20,
+        "height": 12,
+        "label": "Sala Cozinha e Quarto",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00e68c",
+            "#2d2da8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "options: {     scales: {         y: {             ticks: {                 fontSize: 28 // Define o tamanho da fonte do eixo y             }         }     } }",
+        "x": 1880,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "617c0fbc30f32bf6",
+        "type": "inject",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1130,
+        "y": 320,
+        "wires": [
+            [
+                "572857711df38302"
+            ]
+        ]
+    },
+    {
+        "id": "572857711df38302",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "SELECT",
+        "func": "\nmsg.topic = \"SELECT * FROM tempLog ORDER BY timeStamp DESC LIMIT 10;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 320,
+        "wires": [
+            [
+                "ce2d31f49612b489"
+            ]
+        ]
+    },
+    {
+        "id": "ce2d31f49612b489",
+        "type": "mysql",
+        "z": "dc551fcda8623cc8",
+        "mydb": "56aea7be508ed4fb",
+        "name": "conexao_mysql",
+        "x": 1460,
+        "y": 320,
+        "wires": [
+            [
+                "4547cb3c1eae8567"
+            ]
+        ]
+    },
+    {
+        "id": "4547cb3c1eae8567",
+        "type": "function",
+        "z": "dc551fcda8623cc8",
+        "name": "Formatar Dados",
+        "func": "const formattedData = [];\n\nmsg.payload.forEach((row) => {\n    const currentDate = new Date();\n    const hours = currentDate.getHours();\n    const minutes = currentDate.getMinutes();\n    const seconds = currentDate.getSeconds();\n    const formattedRow = {\n        hora: `${hours}:${minutes}:${seconds}`,\n        sala: row.sala,\n        cozinha: row.cozinha,\n        quarto: row.quarto\n    };\n    formattedData.push(formattedRow);\n});\n\nmsg.payload = formattedData;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 320,
+        "wires": [
+            [
+                "89761c7010856260"
+            ]
+        ]
+    },
+    {
+        "id": "89761c7010856260",
+        "type": "ui_template",
+        "z": "dc551fcda8623cc8",
+        "group": "dd885df6ad54c298",
+        "name": "Tabela com style",
+        "order": 2,
+        "width": 20,
+        "height": 7,
+        "format": "<div layout=\"row\" layout-align=\"start center\">\n  <span flex>Hora</span>\n  <span flex>sala</span>\n  <span flex>cozinha</span>\n  <span flex>quarto</span>\n</div>\n<div layout=\"row\" layout-align=\"start center\" ng-repeat=\"row in msg.payload\">\n  <span flex style=\"color: green\">{{row.hora}}</span>\n  <span flex style=\"color: red\">{{row.sala}} dB</span>\n  <span flex style=\"color: blue\">{{row.cozinha}} dB</span>\n  <span flex style=\"color: purple\">{{row.quarto}} dB</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1850,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22b379384c89f126",
+        "type": "mqtt out",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2ba8bb5e7935c93b",
+        "x": 590,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "db12294c740ec2c3",
+        "type": "mqtt out",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2ba8bb5e7935c93b",
+        "x": 570,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "39445b0f022ece85",
+        "type": "mqtt out",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2ba8bb5e7935c93b",
+        "x": 530,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "71e3923bbf3f5d34",
+        "type": "delay",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fa4d5604bed94db",
+        "type": "delay",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 500,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6aefa99d066d4d8c",
+        "type": "delay",
+        "z": "dc551fcda8623cc8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    }
+]
